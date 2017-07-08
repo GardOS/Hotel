@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.westerdals.gard.hotel.RecommendationFragment">
+
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/submitText"
+            android:hint="Write your own recommendation!"
+            android:inputType="textMultiLine"
+            android:textSize="25sp"
+            android:maxLines="6"
+            android:maxLength="200"
+            android:gravity="top|left"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/header_button"
+            android:layout_weight="1"
+            android:layout_marginTop="-5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/postsRecyclerView"
+        android:layout_weight="8.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/newestButton"
+            android:text="Newest"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/header_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/mostPopularButton"
+            android:text="Most popular"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/header_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

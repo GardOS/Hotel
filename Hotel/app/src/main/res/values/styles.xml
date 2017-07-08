@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorRed</item>
+        <item name="colorPrimaryDark">@color/colorRed</item>
+        <item name="colorAccent">@color/colorRed</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:navigationBarColor">@color/colorRed</item>
+        <item name="android:windowBackground">@color/colorLightGray</item>
+    </style>
+
+</resources>
